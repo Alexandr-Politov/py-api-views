@@ -25,6 +25,7 @@ cinema_hall_detail = CinemaHallViewSet.as_view(
     }
 )
 
+
 urlpatterns = [
     path("movies/", include(movies_router.urls)),
     path("genres/", GenreList.as_view(), name="genre-list"),
